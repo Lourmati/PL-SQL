@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1678EFF7-69EB-7AE8-2904-A6C92F4DBB8E" name="PASSAGER">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:49:14 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idPassager" id="10C2B4A8-62D2-8DEC-BDDF-F233E01606AF">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:49:28 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="idModePaiment" id="9F32955E-1010-EB6D-1842-706303CD1D35">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 18:04:58 UTC</createdTime>
+<generatorID>920FE130-479A-A50C-79F1-2E44B8A9295F</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<referedAttribute>8C7ED97B-D28A-E9B8-152E-543D9AD4D120</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="idUtilisateur" id="22129C7E-F953-5FB4-5173-ED17D711C368">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 18:29:47 UTC</createdTime>
+<generatorID>04C9E9E3-FE51-8ACB-1D77-B500556DDDFD</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<referedAttribute>F6136197-A70D-81E5-4E84-FF32A51AF57E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D20BA80F-3BC6-8597-2CD8-F5A1A873C6DD" name="UTILISATEUR PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:50:13 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>10C2B4A8-62D2-8DEC-BDDF-F233E01606AF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

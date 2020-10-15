@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5A9A6E71-F941-F58C-9495-C05DCC699B5D" name="PISTE_AEROPORT_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>5BE155B1-4515-95BA-A6A1-D05D1B33590D</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<containerWithKeyObject>6FB56B01-0CB9-310F-E088-BA7F3EC20D65</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>FA4A175F-62FE-3937-8F10-07A1299EA38F</localFKIndex>
+<keyObject>6691363B-0AFC-5ACA-3650-97D10D99DDBD</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

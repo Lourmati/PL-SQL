@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75BC7CEC-F377-879F-1EB3-5A26E639814F" name="UTILISATEUR">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>15EE1D4D-AE79-6263-5AE4-EB45CCFF100B</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idUtilisateur" id="6B41A3E7-1E0C-F18F-C7E3-C89887A48D0B">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>F6136197-A70D-81E5-4E84-FF32A51AF57E</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="DBA7D44D-CBE1-9883-970C-D082F3835472">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>AFD836B0-EC0D-26EC-478C-1CE2C238FA23</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mot_de_passe" id="805B366D-87AD-AEF0-CB64-98EFF107C957">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>A718812B-B4AC-7238-50FF-72AB3619A6FB</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C01A2FD3-C8F6-AF58-2ACC-E840812477B4" name="UTILISATEUR_PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>A06E2434-67A4-9BA9-28A6-039CDAC1275F</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B41A3E7-1E0C-F18F-C7E3-C89887A48D0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

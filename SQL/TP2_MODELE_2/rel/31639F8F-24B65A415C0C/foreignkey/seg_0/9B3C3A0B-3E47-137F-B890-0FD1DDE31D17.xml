@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9B3C3A0B-3E47-137F-B890-0FD1DDE31D17" name="PASSAGER_UTILISATEUR_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>04C9E9E3-FE51-8ACB-1D77-B500556DDDFD</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<containerWithKeyObject>86AE8A63-33B5-0666-7972-6469B14FBD59</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>A0713512-A13A-30E6-E34C-2BB98053E3A8</localFKIndex>
+<keyObject>C01A2FD3-C8F6-AF58-2ACC-E840812477B4</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

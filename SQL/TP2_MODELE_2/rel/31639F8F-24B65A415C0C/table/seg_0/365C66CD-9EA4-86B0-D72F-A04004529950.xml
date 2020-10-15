@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="365C66CD-9EA4-86B0-D72F-A04004529950" name="BILLET">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>6397AB23-01E3-1D90-5DB2-74D07768C917</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idBillet" id="F83A6A8C-56F2-D9BE-1093-FCFCE5888D03">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>055763A3-88EE-C9EB-40D1-91720D591C35</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numeroVol" id="53077713-E17C-005E-8A4E-AE555CA721CA">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>81AC5F9A-50E8-92E4-20BD-ACBBDDCDEDE1</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prix" id="55FA9962-98BE-9088-02F8-F44C91DC1634">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>06B58327-8293-6F90-D2E5-C84423E3A5E0</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VOL_numeroVol" id="F81806A3-B9F9-B227-EBAF-5AD9ADF07226">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>DA0FD3A2-C87C-920C-A124-1BF85EB1E67F</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<delegate>657948AA-B4B9-A242-29C8-63E5EF699805</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="820E739E-B126-2150-9E5C-C1DADCB8C3E0" referredColumn="657948AA-B4B9-A242-29C8-63E5EF699805"/>
+</associations>
+</Column>
+<Column name="PASSAGER_idPassager" id="B2800747-E39F-BCC9-E14F-8ABA4C2B7BC1">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>E7C90ED2-6634-BBB6-E781-AAAB2BC40F75</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>7AF95A9F-4526-FB89-6912-FF4866C2FD79</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1DE3F84-A7CB-2219-4BD7-1B9BABC717DD" referredColumn="7AF95A9F-4526-FB89-6912-FF4866C2FD79"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2FE7BD9F-06EF-7540-36B3-549417292ED5" name="BILLET_PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>0F4B24B3-2992-2EA0-175F-F0217499D9BE</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F83A6A8C-56F2-D9BE-1093-FCFCE5888D03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E92C6E35-E4D3-C41A-9B2F-33053E7BC647" name="BILLET_PASSAGER_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>3E269BE6-BA30-5D03-502C-0FEBA14FF9FD</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2800747-E39F-BCC9-E14F-8ABA4C2B7BC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23F595EF-45FD-FEAA-BEA9-18D56809FFAD" name="BILLET_VOL_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>7D5105BE-9AB0-BF54-5275-35463ABDE529</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F81806A3-B9F9-B227-EBAF-5AD9ADF07226"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

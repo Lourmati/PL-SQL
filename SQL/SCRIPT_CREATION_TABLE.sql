@@ -1,0 +1,221 @@
+-- Généré par Oracle SQL Developer Data Modeler 4.0.1.836
+--   à :        2019-05-09 14:20:11 EDT
+--   site :      Oracle Database 11g
+--   type :      Oracle Database 11g
+
+
+
+
+CREATE TABLE AEROPORT
+  (
+    idAeroport NUMBER NOT NULL ,
+    Nom        VARCHAR2 (30 CHAR) NOT NULL ,
+    Lieu       VARCHAR2 (30 CHAR)
+  ) ;
+ALTER TABLE AEROPORT ADD CONSTRAINT AEROPORT_PK PRIMARY KEY ( idAeroport ) ;
+
+CREATE TABLE AVION
+  (
+    idAvion                     NUMBER NOT NULL ,
+    Manufacturier               VARCHAR2 (30 CHAR) NOT NULL ,
+    Modele                      VARCHAR2 (30 CHAR) ,
+    TRANSPORTEUR_idTransporteur VARCHAR2 (30 CHAR) NOT NULL
+  ) ;
+ALTER TABLE AVION ADD CONSTRAINT AVION_PK PRIMARY KEY ( idAvion ) ;
+
+CREATE TABLE "AVION_ETAT_AVION"
+  (
+    AVION_idAvion          NUMBER NOT NULL ,
+    ETAT_AVION_idEtatAvion NUMBER
+  ) ;
+ALTER TABLE "AVION_ETAT_AVION" ADD CONSTRAINT "AVION_ETAT_AVION__IDX" PRIMARY KEY ( AVION_idAvion, ETAT_AVION_idEtatAvion ) ;
+
+CREATE TABLE BILLET
+  (
+    idBillet            NUMBER NOT NULL ,
+    Prix                NUMBER NOT NULL ,
+    VOL_numeroVol       VARCHAR2 (30 CHAR) NOT NULL ,
+    PASSAGER_idPassager NUMBER NOT NULL
+  ) ;
+ALTER TABLE BILLET ADD CONSTRAINT BILLET_PK PRIMARY KEY ( idBillet ) ;
+
+CREATE TABLE EQUIPAGE
+  (
+    idEquipage                  NUMBER NOT NULL ,
+    Pilote                      VARCHAR2 (30 CHAR) NOT NULL ,
+    TRANSPORTEUR_idTransporteur VARCHAR2 (30 CHAR) NOT NULL ,
+    nomEquipage                 VARCHAR2 (30 CHAR)
+  ) ;
+ALTER TABLE EQUIPAGE ADD CONSTRAINT EQUIPAGE_PK PRIMARY KEY ( idEquipage ) ;
+
+CREATE TABLE ETAT_AVION
+  (
+    Etat_Actuel VARCHAR2 (30 CHAR) NOT NULL ,
+    Piste       VARCHAR2 (30 CHAR) NOT NULL ,
+    idEtatAvion NUMBER NOT NULL
+  ) ;
+ALTER TABLE ETAT_AVION ADD CONSTRAINT ETAT_AVION_PK PRIMARY KEY ( idEtatAvion ) ;
+
+CREATE TABLE "ETAT_AVION_PISTE"
+  (
+    PISTE_idPiste          NUMBER NOT NULL ,
+    ETAT_AVION_idEtatAvion NUMBER
+  ) ;
+ALTER TABLE "ETAT_AVION_PISTE" ADD CONSTRAINT "ETAT_AVION_PISTE__IDX" PRIMARY KEY ( PISTE_idPiste, ETAT_AVION_idEtatAvion ) ;
+
+CREATE TABLE ETAT_VOL
+  (
+    idEtatVol   NUMBER NOT NULL ,
+    etatActuel  VARCHAR2 (30 CHAR) NOT NULL ,
+    Longitude   NUMBER NOT NULL ,
+    Latitude    NUMBER NOT NULL ,
+    Altitude    NUMBER ,
+    Orientation VARCHAR2 (30 CHAR) ,
+    Vitesse     NUMBER
+  ) ;
+ALTER TABLE ETAT_VOL ADD CONSTRAINT ETAT_VOL_PK PRIMARY KEY ( idEtatVol ) ;
+
+CREATE TABLE MODE_PAIEMENT
+  (
+    idModePaiment NUMBER NOT NULL ,
+    Type_Paiement VARCHAR2 (30) NOT NULL
+  ) ;
+ALTER TABLE MODE_PAIEMENT ADD CONSTRAINT MODE_PAIEMENT_PK PRIMARY KEY ( idModePaiment ) ;
+
+CREATE TABLE PASSAGER
+  (
+    idPassager                  NUMBER NOT NULL ,
+    MODE_PAIEMENT_idModePaiment NUMBER NOT NULL ,
+    UTILISATEUR_idUtilisateur   NUMBER NOT NULL
+  ) ;
+CREATE UNIQUE INDEX PASSAGER__IDX ON PASSAGER
+  (
+    UTILISATEUR_idUtilisateur ASC
+  )
+  ;
+  ALTER TABLE PASSAGER ADD CONSTRAINT PASSAGER_PK PRIMARY KEY ( idPassager ) ;
+
+CREATE TABLE PISTE
+  (
+    idPiste             NUMBER NOT NULL ,
+    etatPiste           VARCHAR2 (30 CHAR) NOT NULL ,
+    Longueur            NUMBER NOT NULL ,
+    Largeur             NUMBER NOT NULL ,
+    AEROPORT_idAeroport NUMBER NOT NULL
+  ) ;
+ALTER TABLE PISTE ADD CONSTRAINT PISTE_PK PRIMARY KEY ( idPiste ) ;
+
+CREATE TABLE TRANSPORTEUR
+  (
+    idTransporteur VARCHAR2 (30 CHAR) NOT NULL ,
+    Nom            VARCHAR2 (30 CHAR) NOT NULL
+  ) ;
+ALTER TABLE TRANSPORTEUR ADD CONSTRAINT TRANSPORTEUR_PK PRIMARY KEY ( idTransporteur ) ;
+
+CREATE TABLE UTILISATEUR
+  (
+    idUtilisateur NUMBER NOT NULL ,
+    Nom           VARCHAR2 (30 CHAR) NOT NULL ,
+    Mot_de_passe  VARCHAR2 (30 CHAR)
+  ) ;
+ALTER TABLE UTILISATEUR ADD CONSTRAINT UTILISATEUR_PK PRIMARY KEY ( idUtilisateur ) ;
+
+CREATE TABLE VOL
+  (
+    numeroVol                   VARCHAR2 (30 CHAR) NOT NULL ,
+    Heure_depart                DATE ,
+    Heure_arrivee               DATE ,
+    Porte                       VARCHAR2 (30 CHAR) ,
+    AVION_idAvion               NUMBER NOT NULL ,
+    TRANSPORTEUR_idTransporteur VARCHAR2 (30 CHAR) NOT NULL ,
+    EQUIPAGE_idEquipage         NUMBER
+  ) ;
+ALTER TABLE VOL ADD CONSTRAINT VOL_PK PRIMARY KEY ( numeroVol ) ;
+
+CREATE TABLE "VOL_AEROPORT"
+  (
+    VOL_numeroVol       VARCHAR2 (30 CHAR) NOT NULL ,
+    AEROPORT_idAeroport NUMBER NOT NULL
+  ) ;
+ALTER TABLE "VOL_AEROPORT" ADD CONSTRAINT "VOL_AEROPORT__IDX" PRIMARY KEY ( VOL_numeroVol, AEROPORT_idAeroport ) ;
+
+CREATE TABLE "VOL_ETAT_VOL"
+  (
+    VOL_numeroVol      VARCHAR2 (30 CHAR) NOT NULL ,
+    ETAT_VOL_idEtatVol NUMBER NOT NULL
+  ) ;
+ALTER TABLE "VOL_ETAT_VOL" ADD CONSTRAINT "VOL_ETAT_VOL__IDX" PRIMARY KEY ( VOL_numeroVol, ETAT_VOL_idEtatVol ) ;
+
+ALTER TABLE AVION ADD CONSTRAINT AVION_TRANSPORTEUR_FK FOREIGN KEY ( TRANSPORTEUR_idTransporteur ) REFERENCES TRANSPORTEUR ( idTransporteur ) ;
+
+ALTER TABLE BILLET ADD CONSTRAINT BILLET_PASSAGER_FK FOREIGN KEY ( PASSAGER_idPassager ) REFERENCES PASSAGER ( idPassager ) ;
+
+ALTER TABLE BILLET ADD CONSTRAINT BILLET_VOL_FK FOREIGN KEY ( VOL_numeroVol ) REFERENCES VOL ( numeroVol ) ;
+
+ALTER TABLE EQUIPAGE ADD CONSTRAINT EQUIPAGE_TRANSPORTEUR_FK FOREIGN KEY ( TRANSPORTEUR_idTransporteur ) REFERENCES TRANSPORTEUR ( idTransporteur ) ;
+
+ALTER TABLE "AVION_ETAT_AVION" ADD CONSTRAINT FK_ASS_1 FOREIGN KEY ( AVION_idAvion ) REFERENCES AVION ( idAvion ) ;
+
+ALTER TABLE "VOL_AEROPORT" ADD CONSTRAINT FK_ASS_12 FOREIGN KEY ( VOL_numeroVol ) REFERENCES VOL ( numeroVol ) ;
+
+ALTER TABLE "VOL_AEROPORT" ADD CONSTRAINT FK_ASS_13 FOREIGN KEY ( AEROPORT_idAeroport ) REFERENCES AEROPORT ( idAeroport ) ;
+
+ALTER TABLE "VOL_ETAT_VOL" ADD CONSTRAINT FK_ASS_16 FOREIGN KEY ( VOL_numeroVol ) REFERENCES VOL ( numeroVol ) ;
+
+ALTER TABLE "VOL_ETAT_VOL" ADD CONSTRAINT FK_ASS_17 FOREIGN KEY ( ETAT_VOL_idEtatVol ) REFERENCES ETAT_VOL ( idEtatVol ) ;
+
+ALTER TABLE "AVION_ETAT_AVION" ADD CONSTRAINT FK_ASS_2 FOREIGN KEY ( ETAT_AVION_idEtatAvion ) REFERENCES ETAT_AVION ( idEtatAvion ) ;
+
+ALTER TABLE "ETAT_AVION_PISTE" ADD CONSTRAINT FK_ASS_5 FOREIGN KEY ( ETAT_AVION_idEtatAvion ) REFERENCES ETAT_AVION ( idEtatAvion ) ;
+
+ALTER TABLE "ETAT_AVION_PISTE" ADD CONSTRAINT FK_ASS_6 FOREIGN KEY ( PISTE_idPiste ) REFERENCES PISTE ( idPiste ) ;
+
+ALTER TABLE PASSAGER ADD CONSTRAINT PASSAGER_MODE_PAIEMENT_FK FOREIGN KEY ( MODE_PAIEMENT_idModePaiment ) REFERENCES MODE_PAIEMENT ( idModePaiment ) ;
+
+ALTER TABLE PASSAGER ADD CONSTRAINT PASSAGER_UTILISATEUR_FK FOREIGN KEY ( UTILISATEUR_idUtilisateur ) REFERENCES UTILISATEUR ( idUtilisateur ) ;
+
+ALTER TABLE PISTE ADD CONSTRAINT PISTE_AEROPORT_FK FOREIGN KEY ( AEROPORT_idAeroport ) REFERENCES AEROPORT ( idAeroport ) ;
+
+ALTER TABLE VOL ADD CONSTRAINT VOL_AVION_FK FOREIGN KEY ( AVION_idAvion ) REFERENCES AVION ( idAvion ) ;
+
+ALTER TABLE VOL ADD CONSTRAINT VOL_EQUIPAGE_FK FOREIGN KEY ( EQUIPAGE_idEquipage ) REFERENCES EQUIPAGE ( idEquipage ) ;
+
+ALTER TABLE VOL ADD CONSTRAINT VOL_TRANSPORTEUR_FK FOREIGN KEY ( TRANSPORTEUR_idTransporteur ) REFERENCES TRANSPORTEUR ( idTransporteur ) ;
+
+
+-- Rapport récapitulatif d'Oracle SQL Developer Data Modeler : 
+-- 
+-- CREATE TABLE                            16
+-- CREATE INDEX                             1
+-- ALTER TABLE                             34
+-- CREATE VIEW                              0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

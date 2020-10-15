@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BILLET-PASSAGER" directorySegmentName="seg_0" id="3E269BE6-BA30-5D03-502C-0FEBA14FF9FD">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:57:02 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="2A347C23-E4EE-50B2-32D7-12A67781E4BB" value="true"/>
+</engineerTo>
+<sourcePk>D20BA80F-3BC6-8597-2CD8-F5A1A873C6DD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1678EFF7-69EB-7AE8-2904-A6C92F4DBB8E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6397AB23-01E3-1D90-5DB2-74D07768C917</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="906E7DBB-CDD5-910E-9721-F7326ACB5471" name="ETAT_AVION">
+<createdBy>1739188</createdBy>
+<createdTime>2019-04-29 20:36:18 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Etat_Actuel" id="51AEFDCD-E558-5099-8B05-A8BB4FCF01A7">
+<createdBy>1739188</createdBy>
+<createdTime>2019-04-29 20:36:44 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Piste" id="E001467C-2E15-D95A-4D89-AA6834331144">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 18:12:11 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="idEtatAvion" id="F0B8F57C-E864-1459-F3E9-0AA16385F2FC">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 18:17:20 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BBB4F8B5-AA06-DF52-7E11-3C4BF19B2345" name="ETAT_AVION PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-04-29 20:36:55 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F0B8F57C-E864-1459-F3E9-0AA16385F2FC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

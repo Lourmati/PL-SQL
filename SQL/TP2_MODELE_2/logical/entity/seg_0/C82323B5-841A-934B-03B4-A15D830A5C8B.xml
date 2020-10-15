@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C82323B5-841A-934B-03B4-A15D830A5C8B" name="TRANSPORTEUR">
+<createdBy>1739188</createdBy>
+<createdTime>2019-04-29 21:12:59 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idTransporteur" id="F504AB26-8F31-3C77-337B-9DD56C9D5CE7">
+<createdBy>1739188</createdBy>
+<createdTime>2019-04-29 21:13:07 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Nom" id="1ADC856D-7B0D-3883-16A9-55C121837D7B">
+<createdBy>1739188</createdBy>
+<createdTime>2019-04-29 21:14:16 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E28D16B3-E794-EDF2-80AC-5737BFDBA7E7" name="TRANSPORTEUR PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-04-29 21:13:35 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F504AB26-8F31-3C77-337B-9DD56C9D5CE7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

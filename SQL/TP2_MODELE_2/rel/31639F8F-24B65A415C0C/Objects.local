@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="28AD899C-ECC6-5496-15B3-B0E6AD6A0A7B" name="AEROPORT" seqName="seg_0"/>
+   <object objectType="Table" objectID="FD6178B6-4BBE-7CB7-C7EC-66DDD43E8EE4" name="AVION" seqName="seg_0"/>
+   <object objectType="Table" objectID="7201FE60-5132-BF2A-CF80-AD60F992FF41" name="AVION-ETAT_AVION" seqName="seg_0"/>
+   <object objectType="Table" objectID="365C66CD-9EA4-86B0-D72F-A04004529950" name="BILLET" seqName="seg_0"/>
+   <object objectType="Table" objectID="9EB3D00A-0D6C-64B7-9217-C0B00C12CC86" name="EQUIPAGE" seqName="seg_0"/>
+   <object objectType="Table" objectID="AE5DD136-31A5-CF4A-8952-2FFB1798EE4E" name="ETAT_AVION" seqName="seg_0"/>
+   <object objectType="Table" objectID="631CDAA6-4AE9-6D6F-964C-7E36DA0DD108" name="ETAT_AVION-PISTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="32478579-8B69-E5C9-3137-C74C8B68A476" name="ETAT_VOL" seqName="seg_0"/>
+   <object objectType="Table" objectID="8D2307AD-F49C-9502-EDFD-64DFCB87C0EE" name="MODE_PAIEMENT" seqName="seg_0"/>
+   <object objectType="Table" objectID="86AE8A63-33B5-0666-7972-6469B14FBD59" name="PASSAGER" seqName="seg_0"/>
+   <object objectType="Table" objectID="6FB56B01-0CB9-310F-E088-BA7F3EC20D65" name="PISTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="54C1098C-C1C6-28BF-FADA-71D88E94E52B" name="TRANSPORTEUR" seqName="seg_0"/>
+   <object objectType="Table" objectID="75BC7CEC-F377-879F-1EB3-5A26E639814F" name="UTILISATEUR" seqName="seg_0"/>
+   <object objectType="Table" objectID="33A07FEC-9CE9-9B5C-71CE-5C92D13BB106" name="VOL" seqName="seg_0"/>
+   <object objectType="Table" objectID="313A7E83-765B-6265-7B0F-76806587200E" name="VOL-AEROPORT" seqName="seg_0"/>
+   <object objectType="Table" objectID="A00B3471-F7F6-EA39-2CD1-4A89861F58EF" name="VOL-ETAT_VOL" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8FB7DD77-B87C-C22F-36B3-69CE196CC73A" name="AVION_TRANSPORTEUR_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E1DE3F84-A7CB-2219-4BD7-1B9BABC717DD" name="BILLET_PASSAGER_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="820E739E-B126-2150-9E5C-C1DADCB8C3E0" name="BILLET_VOL_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5786C04A-E7BB-D12D-2CC8-122F1CCB032C" name="EQUIPAGE_TRANSPORTEUR_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="51EB9E0B-7110-592B-CD56-25A5B8C91BFA" name="FK_ASS_1" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="138347B7-F79D-E7F6-5FBB-A9E61105FE46" name="FK_ASS_12" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4AA68E6C-F0E8-DAD4-9C5D-AA0366C804FB" name="FK_ASS_13" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CB952CE7-9008-F3BE-7C4C-34566A93BC0C" name="FK_ASS_16" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="956B0983-9B52-2B31-CD13-F1C209E8CC2A" name="FK_ASS_17" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="04F73C4B-D4F4-3863-4557-F737BC5E63A2" name="FK_ASS_2" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DADE355F-C0BC-3500-0382-6E4CFD9C3BA2" name="FK_ASS_5" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="28B61F27-737B-6205-58BB-B9CD3009BA52" name="FK_ASS_6" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B972BF93-210D-3F6E-1C5A-D440513D4A33" name="PASSAGER_MODE_PAIEMENT_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9B3C3A0B-3E47-137F-B890-0FD1DDE31D17" name="PASSAGER_UTILISATEUR_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5A9A6E71-F941-F58C-9495-C05DCC699B5D" name="PISTE_AEROPORT_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B18123E7-A334-4C00-1BAA-2321EC9C2AA0" name="VOL_AVION_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="6A7DD2AB-C27F-2BDA-91E1-497867B82588" name="VOL_EQUIPAGE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CB1BE73D-2B19-453C-6D4C-D62003D5ECB3" name="VOL_TRANSPORTEUR_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

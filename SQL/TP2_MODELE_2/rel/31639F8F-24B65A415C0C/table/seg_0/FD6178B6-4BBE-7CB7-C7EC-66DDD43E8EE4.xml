@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD6178B6-4BBE-7CB7-C7EC-66DDD43E8EE4" name="AVION">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>889D977E-77D2-D717-C0FA-2DCC9218022F</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idAvion" id="9F3D3E1A-E97A-75E1-2AF7-CD6C46BD3CA9">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>CC7991A7-00E7-2D70-95A1-4EAF13C55B34</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Manufacturier" id="ED3989A9-5BA8-55B7-58E0-4169C9EE0A25">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>48101589-5C42-40DB-4BFA-740235247B47</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Modele" id="5E20F1A0-BE38-913B-C8D6-70305351796E">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>4C18EC55-E1A4-DE95-159E-68C79FD93F0B</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSPORTEUR_idTransporteur" id="8E015925-A135-A353-4632-877E3AF9EE9A">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>EFFB322A-F5F9-A8FE-7A05-B67B9AB03825</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<delegate>B530C3CB-86BC-4AF3-6BF9-38372953157A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FB7DD77-B87C-C22F-36B3-69CE196CC73A" referredColumn="B530C3CB-86BC-4AF3-6BF9-38372953157A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B630A1F1-3373-F6E7-5033-0BCAF853EF73" name="AVION_PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>DD2C8E3B-725E-75B1-43E3-F5ECE37AE96C</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F3D3E1A-E97A-75E1-2AF7-CD6C46BD3CA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44828D76-9ACD-D9B5-E5DE-65DCBE37477D" name="AVION_TRANSPORTEUR_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>E84B3156-9A1E-016C-C820-CAB04D2420E0</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E015925-A135-A353-4632-877E3AF9EE9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

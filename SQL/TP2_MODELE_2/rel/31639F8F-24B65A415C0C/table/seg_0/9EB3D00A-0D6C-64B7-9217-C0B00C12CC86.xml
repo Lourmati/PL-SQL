@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EB3D00A-0D6C-64B7-9217-C0B00C12CC86" name="EQUIPAGE">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>F710A37D-B837-218A-7F87-538B26A9771B</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idEquipage" id="CFF4B2BF-8120-0963-017A-1AB122F7B7F8">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>F952B5CD-64EE-0935-9416-FD16E6E062B2</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pilote" id="FCBD0D76-23D3-990D-338F-0423352E6F29">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>EE53CB59-1299-0DF4-D8DE-759DE2362E3E</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSPORTEUR_idTransporteur" id="5B28AF77-4B79-80FD-0A38-EBE3EAACFE04">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>938E1F24-DABE-59D6-2B74-6D9492C2B177</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<delegate>B530C3CB-86BC-4AF3-6BF9-38372953157A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5786C04A-E7BB-D12D-2CC8-122F1CCB032C" referredColumn="B530C3CB-86BC-4AF3-6BF9-38372953157A"/>
+</associations>
+</Column>
+<Column name="nomEquipage" id="AE71B98D-1CCD-DADF-A4C0-078E0D0274A8">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>7D37D3FA-9B29-8ADA-ED36-72B8916B501B</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C45ED2F-66F1-CADC-6586-235CF0503269" name="EQUIPAGE_PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>A23457F5-192F-E253-FDEE-7F79E5A44555</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFF4B2BF-8120-0963-017A-1AB122F7B7F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9136DD06-5A51-EF8D-92B8-2A8136EAB235" name="EQUIPAGE_TRANSPORTEUR_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>C379CD9F-C7AB-4493-2BDB-0C42BFB6A8AB</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B28AF77-4B79-80FD-0A38-EBE3EAACFE04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

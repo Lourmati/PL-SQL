@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A00B3471-F7F6-EA39-2CD1-4A89861F58EF" name="VOL-ETAT_VOL">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VOL_numeroVol" id="1A47FC95-EEBB-5584-0F76-3F6BF31A6A66">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<delegate>657948AA-B4B9-A242-29C8-63E5EF699805</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB952CE7-9008-F3BE-7C4C-34566A93BC0C" referredColumn="657948AA-B4B9-A242-29C8-63E5EF699805"/>
+</associations>
+</Column>
+<Column name="ETAT_VOL_idEtatVol" id="E5FDC0CE-8ABC-F8B3-3DE3-282390DD5A1C">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>A6250F07-7E9F-8880-A175-7E0F9FD4E22E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="956B0983-9B52-2B31-CD13-F1C209E8CC2A" referredColumn="A6250F07-7E9F-8880-A175-7E0F9FD4E22E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC7ADE62-9D60-4C94-F44C-D9CD846A105F" name="VOL-ETAT_VOL__IDX">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A47FC95-EEBB-5584-0F76-3F6BF31A6A66"/>
+<colUsage columnID="E5FDC0CE-8ABC-F8B3-3DE3-282390DD5A1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24788D99-B9FF-8EF7-82DA-42F2CF679A6E" name="FK_ASS_16">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>7AE80F8F-1442-1B39-F7AA-060DE9C14BA3</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A47FC95-EEBB-5584-0F76-3F6BF31A6A66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12F9E69B-B481-9410-F3CF-511C3F893D10" name="FK_ASS_17">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>7AE80F8F-1442-1B39-F7AA-060DE9C14BA3</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5FDC0CE-8ABC-F8B3-3DE3-282390DD5A1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

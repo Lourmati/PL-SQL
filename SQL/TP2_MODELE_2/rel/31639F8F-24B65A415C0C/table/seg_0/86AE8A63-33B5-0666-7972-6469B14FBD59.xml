@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86AE8A63-33B5-0666-7972-6469B14FBD59" name="PASSAGER">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>1678EFF7-69EB-7AE8-2904-A6C92F4DBB8E</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPassager" id="7AF95A9F-4526-FB89-6912-FF4866C2FD79">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>10C2B4A8-62D2-8DEC-BDDF-F233E01606AF</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODE_PAIEMENT_idModePaiment" id="9FB28733-A5D8-4504-5AD9-286C2A22CA9E">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>9F32955E-1010-EB6D-1842-706303CD1D35</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>65AA4221-8D0A-8DEA-B246-D3ED5C044486</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B972BF93-210D-3F6E-1C5A-D440513D4A33" referredColumn="65AA4221-8D0A-8DEA-B246-D3ED5C044486"/>
+</associations>
+</Column>
+<Column name="UTILISATEUR_idUtilisateur" id="DB78EB8F-FF63-B100-24C7-DDFF7DDDF79F">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>22129C7E-F953-5FB4-5173-ED17D711C368</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>6B41A3E7-1E0C-F18F-C7E3-C89887A48D0B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B3C3A0B-3E47-137F-B890-0FD1DDE31D17" referredColumn="6B41A3E7-1E0C-F18F-C7E3-C89887A48D0B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59C77BD5-ED3C-1C9B-1253-2467D102187B" name="PASSAGER_PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>D20BA80F-3BC6-8597-2CD8-F5A1A873C6DD</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AF95A9F-4526-FB89-6912-FF4866C2FD79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38DD18F4-4FE8-9F8D-360D-2D5534BF383F" name="PASSAGER__IDX">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>04C9E9E3-FE51-8ACB-1D77-B500556DDDFD</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DB78EB8F-FF63-B100-24C7-DDFF7DDDF79F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DFF0BB2-E18B-3485-0A1B-AC88D1E09062" name="PASSAGER_MODE_PAIEMENT_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>920FE130-479A-A50C-79F1-2E44B8A9295F</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FB28733-A5D8-4504-5AD9-286C2A22CA9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0713512-A13A-30E6-E34C-2BB98053E3A8" name="PASSAGER_UTILISATEUR_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>04C9E9E3-FE51-8ACB-1D77-B500556DDDFD</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB78EB8F-FF63-B100-24C7-DDFF7DDDF79F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VOL-AVION" directorySegmentName="seg_0" id="D57ED864-D2CF-67AF-F538-485E3EE49036">
+<createdBy>1739188</createdBy>
+<createdTime>2019-04-29 21:20:09 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="2A347C23-E4EE-50B2-32D7-12A67781E4BB" value="true"/>
+</engineerTo>
+<sourcePk>DD2C8E3B-725E-75B1-43E3-F5ECE37AE96C</sourcePk>
+<targetPk>9D95093A-C4FE-BEEF-EA90-562AA5196E1B</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>889D977E-77D2-D717-C0FA-2DCC9218022F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B9F99B24-5501-8AFF-6269-A9E6115343CD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

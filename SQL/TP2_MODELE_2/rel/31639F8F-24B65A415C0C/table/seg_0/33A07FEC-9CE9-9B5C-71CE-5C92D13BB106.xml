@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33A07FEC-9CE9-9B5C-71CE-5C92D13BB106" name="VOL">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>B9F99B24-5501-8AFF-6269-A9E6115343CD</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numeroVol" id="657948AA-B4B9-A242-29C8-63E5EF699805">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>A6FA0917-414F-C50A-2025-27E5877BFCE2</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Heure_depart" id="24DF65A9-D663-E29D-0DA6-B3CE084B2224">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>0D881739-D318-DAD8-04F3-AA4CB0DF7823</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Heure_arrivee" id="9612091C-6983-2686-B427-E24E3865793D">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>9A07C6E9-FD09-8C5B-8487-D4EC67FD66BA</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Porte" id="8D2F55A9-FE3A-2FD6-6D07-BFAF96557C90">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>6722C2B5-2D26-43F8-EAA3-061B9C460C46</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AVION_idAvion" id="7AB1665F-B195-CCD0-9CE5-F8A1FA790D95">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>224484E0-2591-C4EA-E803-A49E3A934A4B</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>9F3D3E1A-E97A-75E1-2AF7-CD6C46BD3CA9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B18123E7-A334-4C00-1BAA-2321EC9C2AA0" referredColumn="9F3D3E1A-E97A-75E1-2AF7-CD6C46BD3CA9"/>
+</associations>
+</Column>
+<Column name="TRANSPORTEUR_idTransporteur" id="4D2F4E5E-4CC6-4911-8908-1340103F1C3E">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>756F58FF-C79B-00E1-636D-57C7487D2804</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<delegate>B530C3CB-86BC-4AF3-6BF9-38372953157A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB1BE73D-2B19-453C-6D4C-D62003D5ECB3" referredColumn="B530C3CB-86BC-4AF3-6BF9-38372953157A"/>
+</associations>
+</Column>
+<Column name="EQUIPAGE_idEquipage" id="A3901CC2-6075-98C2-CC68-6C731BAB7503">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>5DDE6ACF-1389-E23A-04FB-162B3B49C4F3</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>CFF4B2BF-8120-0963-017A-1AB122F7B7F8</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A7DD2AB-C27F-2BDA-91E1-497867B82588" referredColumn="CFF4B2BF-8120-0963-017A-1AB122F7B7F8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66D0DB80-2CC1-20BC-A38A-151FA11A5E44" name="VOL_PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>9D95093A-C4FE-BEEF-EA90-562AA5196E1B</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="657948AA-B4B9-A242-29C8-63E5EF699805"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44DF472D-8E39-3D15-1A1C-7DCCEECDF7CB" name="VOL_EQUIPAGE_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>CDD48A14-FAD2-82AC-CBA3-C4D1CDDA5880</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3901CC2-6075-98C2-CC68-6C731BAB7503"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDB9846F-8A08-2CEC-8B1B-E4D862EFCA26" name="VOL_AVION_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>D57ED864-D2CF-67AF-F538-485E3EE49036</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AB1665F-B195-CCD0-9CE5-F8A1FA790D95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00F774B1-4088-5ED1-AFFB-EA55778401D2" name="VOL_TRANSPORTEUR_FK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>95367A6C-F88C-DB8D-0D9C-78A836208816</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D2F4E5E-4CC6-4911-8908-1340103F1C3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

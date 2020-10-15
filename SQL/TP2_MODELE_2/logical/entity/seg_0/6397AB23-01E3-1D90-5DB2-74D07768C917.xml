@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6397AB23-01E3-1D90-5DB2-74D07768C917" name="BILLET">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:51:10 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idBillet" id="055763A3-88EE-C9EB-40D1-91720D591C35">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:51:18 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="numeroVol" id="81AC5F9A-50E8-92E4-20BD-ACBBDDCDEDE1">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:51:34 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="Prix" id="06B58327-8293-6F90-D2E5-C84423E3A5E0">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:51:50 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="numeroVol1" id="DA0FD3A2-C87C-920C-A124-1BF85EB1E67F">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:56:13 UTC</createdTime>
+<generatorID>7D5105BE-9AB0-BF54-5275-35463ABDE529</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<referedAttribute>A6FA0917-414F-C50A-2025-27E5877BFCE2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="idPassager" id="E7C90ED2-6634-BBB6-E781-AAAB2BC40F75">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:57:16 UTC</createdTime>
+<generatorID>3E269BE6-BA30-5D03-502C-0FEBA14FF9FD</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="true"/>
+</engineerTo>
+<referedAttribute>10C2B4A8-62D2-8DEC-BDDF-F233E01606AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F4B24B3-2992-2EA0-175F-F0217499D9BE" name="BILLET PK">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-08 17:51:32 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="31639F8F-C22F-CED4-3F4D-24B65A415C0C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>055763A3-88EE-C9EB-40D1-91720D591C35</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

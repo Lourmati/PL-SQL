@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7201FE60-5132-BF2A-CF80-AD60F992FF41" name="AVION-ETAT_AVION">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AVION_idAvion" id="DBDB7D2B-222D-FD4A-949F-D5140D763717">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>9F3D3E1A-E97A-75E1-2AF7-CD6C46BD3CA9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51EB9E0B-7110-592B-CD56-25A5B8C91BFA" referredColumn="9F3D3E1A-E97A-75E1-2AF7-CD6C46BD3CA9"/>
+</associations>
+</Column>
+<Column name="ETAT_AVION_Etat_Actuel" id="27743CD7-D5DB-E79F-7CAC-D64FC90319D1">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<delegate>1379E278-0CC9-ADF6-8EF7-B6CF7D29E22B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04F73C4B-D4F4-3863-4557-F737BC5E63A2" referredColumn="1379E278-0CC9-ADF6-8EF7-B6CF7D29E22B"/>
+</associations>
+</Column>
+<Column name="ETAT_AVION_idEtatAvion" id="1CF64C2E-7782-8B15-4BE7-4045C8E103AF">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 18:18:12 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>96FB413C-8ECB-C790-F414-2847E7E1E65D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04F73C4B-D4F4-3863-4557-F737BC5E63A2" referredColumn="96FB413C-8ECB-C790-F414-2847E7E1E65D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E33654C4-B8C6-377D-2751-B52EF79142C0" name="AVION-ETAT_AVION__IDX">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBDB7D2B-222D-FD4A-949F-D5140D763717"/>
+<colUsage columnID="27743CD7-D5DB-E79F-7CAC-D64FC90319D1"/>
+<colUsage columnID="1CF64C2E-7782-8B15-4BE7-4045C8E103AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C21B389-346C-37D7-91C1-708DEB8869E7" name="FK_ASS_1">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>0F2BE84E-92BD-44A9-BC4C-80DDF99EFB7E</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBDB7D2B-222D-FD4A-949F-D5140D763717"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="857393BA-9114-F8D0-6471-75D091D7E5E5" name="FK_ASS_2">
+<createdBy>1739188</createdBy>
+<createdTime>2019-05-09 17:36:25 UTC</createdTime>
+<generatorID>0F2BE84E-92BD-44A9-BC4C-80DDF99EFB7E</generatorID>
+<ownerDesignName>TP2_MODELE_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CF64C2E-7782-8B15-4BE7-4045C8E103AF"/>
+<colUsage columnID="27743CD7-D5DB-E79F-7CAC-D64FC90319D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
